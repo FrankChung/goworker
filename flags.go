@@ -127,9 +127,6 @@ func init() {
 }
 
 func flags() error {
-	if !flag.Parsed() {
-		flag.Parse()
-	}
 	if err := workerSettings.Queues.Set(workerSettings.QueuesString); err != nil {
 		return err
 	}
