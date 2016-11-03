@@ -37,6 +37,7 @@ type WorkerSettings struct {
 }
 
 func SetSettings(settings WorkerSettings) {
+	Init()
 	workerSettings = settings
 }
 
